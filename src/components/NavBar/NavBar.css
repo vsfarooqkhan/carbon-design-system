@@ -1,5 +1,9 @@
 .navBar {
     background-color: black !important;
     color : white !important;
-    width: 150px !important;
+    width: 120px !important;
+}
+.icon-class {
+    width: 80px !important;
+    height : 80px !important;
 }

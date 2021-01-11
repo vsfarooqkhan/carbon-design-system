@@ -1,4 +1,4 @@
-import { SideNav, SideNavItems, SideNavMenuItem, SideNavMenu,SideNavLink } from 'carbon-components-react';
+import { SideNav,Icon, SideNavItems, SideNavMenuItem, SideNavMenu,SideNavLink } from 'carbon-components-react';
 import React from 'react';
 import propTypes from 'prop-types';
 import { Fade16 } from '@carbon/icons-react';
@@ -14,14 +14,23 @@ export const NavBar = ({ btnType,onClick, width, height, backgroundColor, size, 
         isChildOfHeader={false}
         aria-label="Side navigation">
         <SideNavItems>
-            <SideNavMenu renderIcon={Fade16} title="Category title">
+            {/* <SideNavMenu renderIcon={Fade16} title="Category title">
               <SideNavMenuItem href="javascript:void(0)">Link</SideNavMenuItem>
               <SideNavMenuItem href="javascript:void(0)">Link</SideNavMenuItem>
               <SideNavMenuItem href="javascript:void(0)">Link</SideNavMenuItem>
             </SideNavMenu>
-            <NavMenu/>
-            <SideNavLink renderIcon={Fade16} href="javascript:void(0)">
-            Link
+            <NavMenu/> */}
+            <SideNavLink href="javascript:void(0)">
+            <Fade16  className="icon-class" />
+            <br/> <p style = {{textAlign:'center'}}> Link 1</p>
+            </SideNavLink>
+            <SideNavLink href="javascript:void(0)">
+            <Fade16  className="icon-class" />
+            <br/> <p style = {{textAlign:'center'}}> Link 2</p>
+            </SideNavLink>
+            <SideNavLink href="javascript:void(0)">
+            <Fade16  className="icon-class" />
+            <br/> <p style = {{textAlign:'center'}}> Link 3</p>
             </SideNavLink>
         </SideNavItems>
         </SideNav>
