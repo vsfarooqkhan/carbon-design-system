@@ -9,7 +9,7 @@ export default {
 
 const Template = (args) => <NavBar {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const NavigationBar = Template.bind({});
+NavigationBar.args = {
   label: 'Login',
 };

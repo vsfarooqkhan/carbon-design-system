@@ -2,8 +2,13 @@
     background-color: black !important;
     color : white !important;
     width: 120px !important;
+    white-space:nowrap !important;
+    width: 10em !important;  
 }
 .icon-class {
     width: 50px !important;
     height : 50px !important;
+}
+.navLink {
+    font-size: 2.5vw;
 }
