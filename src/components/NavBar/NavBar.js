@@ -1,7 +1,7 @@
 import { SideNav,Icon, SideNavItems, SideNavMenuItem, SideNavMenu,SideNavLink } from 'carbon-components-react';
 import React from 'react';
 import propTypes from 'prop-types';
-import { Fade16 } from '@carbon/icons-react';
+import { Fade16,Home32, Bullhorn32 } from '@carbon/icons-react';
 import './NavBar.css';
 import {NavMenu} from './NavMenu';
 export const NavBar = ({ btnType,onClick, width, height, backgroundColor, size, label, ...props }) => {
@@ -21,12 +21,12 @@ export const NavBar = ({ btnType,onClick, width, height, backgroundColor, size, 
             </SideNavMenu>
             <NavMenu/> */}
             <SideNavLink href="javascript:void(0)">
-            <Fade16  className="icon-class" />
-            <br/> <p style = {{textAlign:'center'}}> Link 1</p>
+            <Home32  className="icon-class" />
+            <br/> <p style = {{textAlign:'center'}}> Home</p>
             </SideNavLink>
             <SideNavLink href="javascript:void(0)">
-            <Fade16  className="icon-class" />
-            <br/> <p style = {{textAlign:'center'}}> Link 2</p>
+            <Bullhorn32  className="icon-class" />
+            <br/> <p style = {{textAlign:'center'}}> Campaigns</p>
             </SideNavLink>
             <SideNavLink href="javascript:void(0)">
             <Fade16  className="icon-class" />
