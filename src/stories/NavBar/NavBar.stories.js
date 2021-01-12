@@ -12,4 +12,5 @@ const Template = (args) => <NavBar {...args} />;
 export const NavigationBar = Template.bind({});
 NavigationBar.args = {
   label: 'Login',
+  className : 'navBar'
 };

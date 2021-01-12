@@ -3,7 +3,8 @@
     color : white !important;
     width: 120px !important;
     white-space:nowrap !important;
-    width: 10em !important;  
+    width: 7.6em !important;  
+    overflow: hidden !important;
 }
 .icon-class {
     width: 50px !important;
@@ -11,4 +12,12 @@
 }
 .navLink {
     font-size: 2.5vw;
+}
+.sideNavBar {
+    background-color:aliceblue !important;
+    color : white !important;
+    width: 220px !important;
+    white-space:nowrap !important;
+    width: 20em !important;
+    position: relative !important;  
 }

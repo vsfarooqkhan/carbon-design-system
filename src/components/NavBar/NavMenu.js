@@ -1,25 +1,37 @@
-import  {SideNavMenu, SideNavMenuItem} from 'carbon-components-react';
-import {propTypes} from 'prop-types';
-import {SubMenu} from './SubMenu';
-import { Fade16 } from '@carbon/icons-react';
+import { Row, Column as Col, SideNav,Icon, SideNavItems, SideNavMenuItem, SideNavMenu,SideNavLink } from 'carbon-components-react';
+import React from 'react';
+import propTypes from 'prop-types';
+import { Fade16,Home32, Bullhorn32, SettingsAdjust32,Calendar32 } from '@carbon/icons-react';
+import './NavBar.css';
+import {NavBar} from './NavBar';
+
 export const NavMenu = ({ label,icon, ...props }) => {
     return(
         <>
-            <SideNavMenuItem renderIcon={Fade16} title={label}>
-                
-            </SideNavMenuItem>
-            
+        <Row>
+          <Col lg ={1}>
+          <NavBar/>
+          </Col>
+          <Col lg = {3}>
+            <Row>
+              <NavBar className = "sideNavBar" />
+            </Row>
+          </Col>
+          <Col lg= {5}>
+          Additional content that will display after the sidebar and the side nav bar . 
+          </Col>
+        </Row>
         </>
 
     )
 }
-SubMenu.propTypes = {
-    label: propTypes.string.isRequired,
+NavMenu.propTypes = {
+    label: propTypes.string,
     icon : propTypes.string,
     onClick: propTypes.func,
   };
   
-SubMenu.defaultProps = {
+NavMenu.defaultProps = {
   label : 'Register',
   icon : null,
   onClick: undefined,
