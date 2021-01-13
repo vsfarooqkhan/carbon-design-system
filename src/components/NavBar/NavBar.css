@@ -1,7 +1,7 @@
 .navBar {
     background-color: black !important;
     color : white !important;
-    width: 120px !important;
+    width: 94px !important;
     white-space:nowrap !important;
     /* width: 8.6em !important;   */
     overflow: hidden !important;
@@ -14,10 +14,12 @@
     font-size: 2.5vw;
 }
 .sideNavBar {
-    background-color:aliceblue !important;
+    background-color:#F2F2F2 !important;
     color : white !important;
     /* width: 220px !important; */
     white-space:nowrap !important;
-    width: 20em !important;
+    width: 25em !important;
+    max-width: 25rem !important;
+    height : 100%;
     position: relative !important;  
 }

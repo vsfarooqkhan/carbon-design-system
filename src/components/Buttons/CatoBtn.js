@@ -6,10 +6,10 @@ import '../styles/Button.css';
 /**
  * Button component for user interaction
  */
-export const CatoBtn = ({ btnType, backgroundColor, size, label, ...props }) => {
+export const CatoBtn = ({ btnType, width, height, backgroundColor, size, label, ...props }) => {
   return (
     <Button
-      className='commonBtn' kind = {btnType}>
+      className='commonBtn' kind = {btnType} width = {width} height = {height}>
         <Email32 aria-label="Add" className="my-custom-class" />
       <label style = {{paddingLeft : '30px'}}>{label}</label>
     </Button>
@@ -22,6 +22,8 @@ CatoBtn.propTypes = {
   size: propTypes.oneOf(['small', 'medium', 'large']),
   label: propTypes.string.isRequired,
   icon : propTypes.string,
+  height : propTypes.string,
+  width : propTypes.string,
   onClick: propTypes.func,
 };
 
