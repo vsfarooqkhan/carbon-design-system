@@ -4,7 +4,7 @@ import propTypes from 'prop-types';
 import { Fade16,Home32, Bullhorn32, SettingsAdjust32,Calendar32 } from '@carbon/icons-react';
 import './NavBar.css';
 import {SubMenu} from './SubMenu';
-export const NavBar = ({ className , btnType,onClick, width, height, backgroundColor, size, label, ...props }) => {
+export const SideNavBar = ({ className , btnType,onClick, width, height, backgroundColor, size, label, ...props }) => {
   return (
     <>
       <SideNav
@@ -39,19 +39,29 @@ export const NavBar = ({ className , btnType,onClick, width, height, backgroundC
             <br/> 
             <label style = {{textAlign:'center', fontSize: '10px'}}> Communication</label>
           </SubMenu>
+          <SubMenu link = "javascript:void(0)" className = "navLink">
+            <Calendar32 className="icon-class" />
+            <br/> 
+            <label style = {{textAlign:'center', fontSize: '10px'}}> Communication</label>
+          </SubMenu>
+          <SubMenu link = "javascript:void(0)" className = "navLink">
+            <Calendar32 className="icon-class" />
+            <br/> 
+            <label style = {{textAlign:'center', fontSize: '10px'}}> Communication</label>
+          </SubMenu>
         </SideNavItems>
         </SideNav>
     </>
   );
 };
 
-NavBar.propTypes = {
+SideNavBar.propTypes = {
   backgroundColor: propTypes.string,
   className : propTypes.string,
 };
 
-NavBar.defaultProps = {
+SideNavBar.defaultProps = {
   backgroundColor: '#75BF42',
-  className : 'navBar'
+  className : 'SideNavBar'
 };
-export default NavBar;
+export default SideNavBar;

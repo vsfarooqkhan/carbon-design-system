@@ -1,24 +1,20 @@
-import  {SideNavMenuItem} from 'carbon-components-react';
+import  {SideNavLink} from 'carbon-components-react';
 import propTypes from 'prop-types';
-export const SubMenu = ({ link,label,icon, ...props }) => {
+export const SubMenu = ( props ) => {
     return(
         <>
-            <SideNavMenuItem href={link}>{label}</SideNavMenuItem>
+            <SideNavLink href={props.link} className = {props.className}>{props.children}</SideNavLink>
         </>
 
     )
 }
 SubMenu.propTypes = {
     link : propTypes.string,
-    label: propTypes.string.isRequired,
-    icon : propTypes.string,
     onClick: propTypes.func,
   };
   
 SubMenu.defaultProps = {
   link : '#', 
-  label : 'Register',
-  icon : null,
   onClick: undefined,
 };
   

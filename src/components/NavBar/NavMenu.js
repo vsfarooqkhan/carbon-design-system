@@ -4,17 +4,18 @@ import propTypes from 'prop-types';
 import { Fade16,Home32, Bullhorn32, SettingsAdjust32,Calendar32 } from '@carbon/icons-react';
 import './NavBar.css';
 import {NavBar} from './NavBar';
-
+import {SideNavBar} from './SideNavBar';
+import 'carbon-components/css/carbon-components.css';
 export const NavMenu = ({ label,icon, ...props }) => {
     return(
         <>
         <Row>
           <Col lg ={1}>
-          <NavBar/>
+          <NavBar className = "navBar"/>
           </Col>
           <Col lg = {3}>
             <Row>
-              <NavBar className = "sideNavBar" />
+              <SideNavBar className = "sideNavBar" />
             </Row>
           </Col>
           <Col lg= {5}>

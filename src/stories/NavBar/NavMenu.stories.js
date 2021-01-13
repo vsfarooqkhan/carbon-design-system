@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { NavMenu } from '../../components/NavBar/NavMenu';
+import { SideNavBar } from '../../components/NavBar/SideNavBar';
 
 export default {
-  title: 'UI/NavMenu',
-  component: NavMenu,
+  title: 'UI/SideNavBar',
+  component: SideNavBar,
 };
 
-const Template = (args) => <NavMenu {...args} />;
+const Template = (args) => <SideNavBar {...args} />;
 
 export const NavigationBar = Template.bind({});
 NavigationBar.args = {

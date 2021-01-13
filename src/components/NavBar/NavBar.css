@@ -3,7 +3,7 @@
     color : white !important;
     width: 120px !important;
     white-space:nowrap !important;
-    width: 7.6em !important;  
+    /* width: 8.6em !important;   */
     overflow: hidden !important;
 }
 .icon-class {
@@ -16,7 +16,7 @@
 .sideNavBar {
     background-color:aliceblue !important;
     color : white !important;
-    width: 220px !important;
+    /* width: 220px !important; */
     white-space:nowrap !important;
     width: 20em !important;
     position: relative !important;  
